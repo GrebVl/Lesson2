@@ -13,13 +13,9 @@ int firstNum = int.Parse(Console.ReadLine());
 int secondNum = firstNum / 100;
 int thirdNum = firstNum % 10;
 
-if (firstNum > 99 && firstNum < 1000)
+if (Math.Abs(firstNum) > 99 && Math.Abs(firstNum) < 1000)
 {
     Console.WriteLine((firstNum % 100-thirdNum)/10);
-}
-else if (firstNum < -99 && firstNum > -1000)
-{
-   Console.WriteLine((firstNum % 100-thirdNum)/10);
 }
 else
 {
